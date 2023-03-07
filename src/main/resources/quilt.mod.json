@@ -1,23 +1,26 @@
 {
   "schema_version": 1,
   "quilt_loader": {
-    "group": "io.github.cottonmc",
-    "id": "starter",
+    "group": "gay.lemmaeof",
+    "id": "spolr",
     "version": "${version}",
     "metadata": {
-      "name": "Fabric Starter",
-      "icon": "assets/starter/icon.png",
-      "description": "Template for starting out Fabric mods",
+      "name": "Splash Potion of Large Rock",
+      "icon": "assets/spolr/icon.png",
+      "description": "Splash Potion of Large Rock",
       "license": "MIT",
       "contact": {
-        "sources": "https://github.com/CottonMC/FabricStarter"
+        "sources": "https://github.com/LemmaEOF/FabricStarter"
       }
     },
     "intermediate_mappings": "net.fabricmc:intermediary",
     "environment": "*",
     "entrypoints": {
       "init": [
-        "io.github.cottonmc.starter.FabricStarter"
+        "gay.lemmaeof.spolr.SplashPotionOfLargeRock"
+      ],
+      "client_init": [
+        "gay.lemmaeof.spolr.SplashPotionOfLargeRockClient"
       ]
     },
     "depends": [
@@ -26,6 +29,5 @@
         "versions": ">=0.17.0-"
       }
     ]
-  },
-  "mixin": "mixins.starter.json"
+  }
 }
